@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Women In Tech</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+      }
+      h1 {
+        text-align: center;
+        color: #e9bc5c;
+      }
+      h2 {
+        text-align: center;
+        border-radius: 12px;
+        padding: 3px;
+        color: #e9bc5c;
+        font-size: xx-large;
+      }
+      img {
+        display: block;
+        max-width: 85%;
+        margin: 0 auto;
+        border: 10px solid #fddb92;
+        border-radius: 30px;
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
+      }
+      p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.5;
+        margin: 30px 0 8px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        color: antiquewhite;
+        font-size: 15px;
+        background: #64d0d5;
+        padding: 10px 15px;
+        border: 2px antiquewhite;
+        border-radius: 18px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: progress;
+      }
+      .pagewrap {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px 45px;
+      }
+      .created {
+        text-align: center;
+        text-decoration: solid;
+        text-shadow: 8px;
+      }
+
+      .line {
+        line-height: 1;
+      }
+      .info {
+        text-decoration: none;
+      }
+      .info:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagewrap">
+      <h1>Black Women</h1>
+      <hr class="line" />
+      <h2>Breaking into Tech</h2>
+      <img src =
+      https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/730/original/black_women_in_tech.jpg?1652033207
+      alt= "black women in tech" />
+      <p>
+        There's a new era of breaking into Tech; Black women are making there
+        presents known in the tech world. The rise of Black women in tech has
+        sparked a high interest leading a great change in the sector.
+        <strong
+          >Black women represent only 1.7% of the tech industry's labor
+          force.</strong
+        >
+        To address this <em><strong>underrepresentation</strong></em> there are
+        many great resources and mentorships that has come forth for women of
+        color to utilize, learn, and gain knowledge to get their start.
+        <br />
+        <br />
+        Its so refreshing to see the elevated climb of black women entering into
+        a space they were told they wouldn't be able to understand or gain the
+        knowledge in. Hats off ladies, we love to see the revolution of you all
+        breaking barriers and getting a chance to show us what you are made of;
+        get more insight at
+        <span>
+          <a href="https://www.baddiesintech.com/" target="_blank" class="info">
+            black women in tech.
+          </a>
+        </span>
+        <br />
+        <br />
+      </p>
+      <button>Learn More 👩🏽‍💻</button>
+
+      <p class="created">This page was created by <em>Dorothy Hall</em></p>
+      <hr class="line" />
+    </div>
+
+    <script>
+      function learnMore() {
+        let name = prompt("What is your first name?");
+        alert("Hello " + name + " ! Nice to meet you ");
+
+        let answer = prompt(
+          "Are interested in being notified for upcoming information?"
+        );
+
+        if (answer === "yes") {
+          alert("Great, we'll be in touch");
+        } else {
+          alert("Ok, update at anytime to get upcomng information");
+        }
+      }
+      let learnMoreButton = document.querySelector("button");
+      learnMoreButton.addEventListener("click", learnMore);
+    </script>
+  </body>
+</html>
